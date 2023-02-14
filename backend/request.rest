@@ -1,0 +1,91 @@
+POST http://localhost:3000/api/services
+content-Type: application/json
+
+{
+    "name": "algum serviço",
+    "description": "test description",
+    "price": 15600,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HBmgYMTsYRRuCjaWBK1m6bCHe1GBfyqBoA&usqp=CAU"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/63eaabc4a02682ad2e3f5752
+
+###
+
+DELETE http://localhost:3000/api/services/63eaabc4a02682ad2e3f5752
+###
+
+PUT  http://localhost:3000/api/services/63ea8c38b64547ade3ddce8d
+content-Type: application/json
+
+{
+    "name": "algum atualização",
+    "description": "test description atualização",
+    "price": 25600,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HBmgYMTsYRRuCjaWBK1m6bCHe1GBfyqBoA&usqp=CAU"
+}
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 3",
+    "description": "Minha Festa de aniversario" ,
+    "author": "Wander",
+    "budget": 9000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HBmgYMTsYRRuCjaWBK1m6bCHe1GBfyqBoA&usqp=CAU",
+    "services": [
+        {
+            "name": "algum atualização 1",
+            "description": "test description atualização",
+            "price": 3000,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HBmgYMTsYRRuCjaWBK1m6bCHe1GBfyqBoA&usqp=CAU"
+        },
+        {
+            "name": "algum atualização 2",
+            "description": "test description atualização",
+            "price": 1600,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HBmgYMTsYRRuCjaWBK1m6bCHe1GBfyqBoA&usqp=CAU"
+        }
+    ]    
+}
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/63eaf100c22fd206872cccd1
+###
+DELETE http://localhost:3000/api/parties/63eaf100c22fd206872cccd1
+###
+PUT http://localhost:3000/api/parties/63eaf3cbc22fd206872cccd5
+Content-Type: application/json
+
+{
+    "title": "Meu evento 3",
+    "description": "Minha Festa de aniversario" ,
+    "author": "Wander",
+    "budget": 11000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HBmgYMTsYRRuCjaWBK1m6bCHe1GBfyqBoA&usqp=CAU",
+    "services": [
+        {
+            "name": "algum atualização 1",
+            "description": "test description atualização",
+            "price": 3000,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HBmgYMTsYRRuCjaWBK1m6bCHe1GBfyqBoA&usqp=CAU"
+        },
+        {
+            "name": "algum atualização 2",
+            "description": "test description atualização",
+            "price": 1600,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HBmgYMTsYRRuCjaWBK1m6bCHe1GBfyqBoA&usqp=CAU"
+        }
+    ]    
+}
+###
